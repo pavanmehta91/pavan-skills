@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TITLE IN 2-4 WORDS</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --ink: #1c2230;
+    --muted: #5b6475;
+    --line: #d9dee7;
+    --blue: #2f6fde;
+    --blue-soft: #e6eefc;
+    --green: #1f8a4c;
+    --green-soft: #e3f4ea;
+    --red: #c63d3d;
+    --red-soft: #fbe7e7;
+    --amber: #b7791f;
+    --amber-soft: #fdf3dc;
+    --violet: #6b4fc8;
+    --violet-soft: #eee9fb;
+    --gray-soft: #eef0f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--blue-soft); color: var(--blue); margin-right: 6px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; margin-top: 22px; }
+  @media (max-width: 600px) { section { padding: 18px 14px; } }
+  h2 { font-size: 19px; margin: 0 0 4px; }
+  h2 .num { color: var(--blue); margin-right: 8px; }
+  h3.sub { font-size: 15px; margin: 18px 0 8px; }
+  .lede { color: var(--muted); margin: 0 0 16px; }
+  .foot { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  svg { width: 100%; height: auto; display: block; }
+  svg text { font-family: inherit; }
+  .scroll { overflow-x: auto; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 760px) { .grid3, .grid2 { grid-template-columns: 1fr; } }
+  .card { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; background: #fff; }
+  .card h3 { font-size: 15px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .card.red { border-left: 4px solid var(--red); }
+  .card.green { border-left: 4px solid var(--green); }
+  .card.amber { border-left: 4px solid var(--amber); }
+  .card.blue { border-left: 4px solid var(--blue); }
+  .card.violet { border-left: 4px solid var(--violet); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--gray-soft); font-weight: 600; }
+  .yes { color: var(--green); font-weight: 600; }
+  .no { color: var(--red); font-weight: 600; }
+  code { font: 12.5px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--gray-soft); padding: 1px 5px; border-radius: 4px; }
+  pre { background: var(--gray-soft); border-radius: 8px; padding: 12px 14px; overflow-x: auto; font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+  pre code { background: none; padding: 0; }
+  .pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; }
+  .pill.g { background: var(--green-soft); color: var(--green); }
+  .pill.r { background: var(--red-soft); color: var(--red); }
+  .pill.a { background: var(--amber-soft); color: var(--amber); }
+  .pill.b { background: var(--blue-soft); color: var(--blue); }
+  .pill.v { background: var(--violet-soft); color: var(--violet); }
+  .pill.n { background: var(--gray-soft); color: var(--muted); }
+  ul.tight { margin: 6px 0 0; padding-left: 18px; }
+  ul.tight li { margin: 3px 0; }
+  .note { background: var(--amber-soft); border: 1px solid #f0dcaa; border-radius: 10px; padding: 12px 14px; font-size: 14px; }
+  .finding { background: var(--blue-soft); border: 1px solid #c4d6f7; border-radius: 10px; padding: 12px 14px; font-size: 14px; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <span class="tag">TICKET-123</span><span class="tag">PR #000</span>
+  <h1>One-line headline that states the topic</h1>
+  <p>One sentence: what this page explains and where it comes from.</p>
+</header>
+
+<section>
+  <h2><span class="num">1</span>Section title that states the point</h2>
+  <p class="lede">One sentence the reader should take away from this section.</p>
+  <!-- visual from diagrams.md goes here -->
+</section>
+
+<footer>Source: WHAT THIS WAS GENERATED FROM (ticket, PR, branch, date).</footer>
+</main>
+</body>
+</html>
